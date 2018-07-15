@@ -23,4 +23,4 @@ def ideation():
     return app.send_static_file('twocolumn2.html')
 
 if __name__=='__main__':
-    app.run()
+    app.run(debug=True)
