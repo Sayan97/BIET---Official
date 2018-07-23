@@ -1,38 +1,171 @@
+.Particle
+{
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  z-index:10;
+}
+
 .paral1{ 
     /* The image used */
-    /*background:linear-gradient(to bottom, rgba(6, 34, 16,0.6),rgba(6, 34, 16,0.6)),url("img1.jpg");*/
-    background-image:url(./img1.jpg);
 
-    /* Set a specific height */
-    height: 60vh; 
-    margin-top:0px;
-    /* Create the parallax scrolling effect */
+
+ 
+      box-sizing: border-box;
+ /*background:linear-gradient(to bottom, rgb(34,38, 41,0.5),rgba(34,38,41,0.5)),url("img2.8.jpeg");    /* Set a specific height */
+    height: 100vh;
+        /* Create the parallax scrolling effect */
+        background-color:black;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
     text-align:center;
-    padding:10px;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    padding:6rem;
+
+}
+.paral1 .paral1-image {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.paral1 .paral1-image img {
+  width: 100%;
+}
+
+
+.head-box
+{
+    /*background-color:rgba(0,0,0,0.6);*/
+    padding:20px;
+    letter-spacing:3px;
+    border:10px solid #61892f;
+    border-radius:1rem;
 }
 
 .Primary-head
 {
     font-size:6rem;
-    color:black;
+    color:white;
+    font-weight: 1000;
+
+text-align:center;
+   
+
 }
+
+.About-box{
+    height:50rem;
+    position:relative;
+}
+
+.Paragraph{
+    font-size:3rem;
+    color:#fff;
+    font-weight: 1000;
+}
+
+.left-part
+{
+    position:absolute;
+    left:0px;
+    top:0px;
+    display:inline-block;
+    width:100%;
+    height:100%;
+    background-color:#222629;  
+    clip-path: polygon(0 0, 81% 0, 63% 100%, 0 100%);
+
+}
+
+
+.Secondary-head
+{
+    margin-left:10rem;
+    margin-top:4rem;
+    display:inline-block;
+    color:whitesmoke;
+    border-left:1.3rem solid #86C232;
+    padding-left:1.5rem;
+    font-size:4.5rem;
+    letter-spacing:3px;
+}
+
+
+.paragraph
+{
+    position: absolute;
+    width:55%;
+    left:28%;
+    top:30%;
+    transform:translateX(-30%);
+    color:white;
+    font-size:2rem;
+    letter-spacing:3px;
+
+}
+
+
+
+
+.right-part
+{
+    position:absolute;
+    left:0px;
+    top:0px;
+    display:inline-block;    
+    width:100%;
+    height:100%;
+    background-color:#86C232;
+    clip-path:polygon(81% 0, 100% 0, 100% 100%, 63% 100%);
+
+
+}
+
+.image-box
+{
+    position:absolute;
+    right:4rem;
+    top:55%;
+    transform:translateY(-50%);
+    height:60%;
+    width:15%;
+    text-align:center;
+
+}
+
 
 .Main-head
 {
-    font-size:10rem;
-    display:block;
-    color:black;
+
+      font-size:10rem;
+
+    display:inline-block;
+    color:whitesmoke;
+    padding:5px;
+    border-radius:5px;
+    margin-bottom:10px;
+ 
 
 
 }
 
 .paral2{ 
     /* The image used */
-    background-image: url("./img2.jpg");
+
+
+    background:linear-gradient(to right,rgba(34,38,41,0.5),rgba(34,38,41,0.5)),
+    url("./img4.3.jpg");
+
 
     /* Set a specific height */
     /*height:100vh;*/
@@ -48,26 +181,12 @@
 
 .paral3{ 
     /* The image used */
-    background-image: url("./img1.jpg");
 
-
-
+    margin:0px;
  
   display:block;
-  background:linear-gradient(to right ,rgba(6,34,16,0.8),rgba(6,34,16,0.8)), url("./img3.jpg");
-  background-position:center;
-  background-size:cover;
-  background-position:center;
-  text-align:center;
-  padding-top:0.6rem;
-    /* Set a specific height */
-    /*height:100vh;*/
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  padding:0rem;
+  
 }
 
 
@@ -85,8 +204,67 @@
 
 .Certify-box
 {
-    border-top:5px solid black;
+    display:block;
     position: relative;
-    background-color:black;
+    background-color:#222629;
+    height:20rem;
     color:white;
+    margin-top:-1rem;
+    top:10px;
+    padding:2rem;
+    background-color:#474b4f;
+    /*background:linear-gradient(to right, rgba(134,194,50,0.3)
+    ,rgba(97,137,47,0.3)) , url(./img1.jpg);*/
+    background-position:center;
+    background-size:cover;
+
+ 
+}
+
+.Foot_Logo
+{
+    width:25rem;
+}
+
+.logo-container
+{
+
+    display:inline-block;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+
+}
+
+
+.Foot_status-1
+{
+    display:inline-block;
+    position:absolute;
+    left:10%;
+    top:50%;
+    font-size:1.7rem;
+    color:lightgrey;
+    background-color:rgba(34,38,41,0.3);
+    border-radius:1rem;
+    padding:0.5rem;
+    text-align:center;
+
+
+}
+
+.Foot_status-2
+{
+    display:inline-block;
+    position:absolute;
+    right:10%;
+    top:50%;
+    font-size:1.7rem;
+    color:lightgrey;
+    background-color:rgba(34,38,41,0.3);
+    border-radius:1rem;
+    padding:0.5rem;
+    text-align:center;
+
 }

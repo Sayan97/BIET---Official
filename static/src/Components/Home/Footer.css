@@ -3,9 +3,50 @@
 {
   display:block;
   position: relative;
-  padding:2rem;
+  padding:5rem;
+  height:60rem;
 
 }
+
+.Contact_content-box
+{
+  position:absolute;
+  left:10%;
+  top:25%;
+  color:#222629;
+  font-size:2.5rem;
+
+
+}
+
+
+
+.Contact_left_Secondary-head
+{
+    margin-left:10rem;
+    margin-top:4rem;
+    display:inline-block;
+    color:whitesmoke;
+    border-left:1.3rem solid  #222629;
+    padding-left:1.5rem;
+    font-size:4.5rem;
+    letter-spacing:3px;
+}
+
+
+.Contact_right_Secondary-head
+{
+  position:absolute;
+  top:1rem;
+  left:50%;
+    display:inline-block;
+    color:whitesmoke;  
+    font-size:4.5rem;
+    letter-spacing:3px;
+    border-left:1.3rem solid #86C232;
+    padding-left:1.5rem;
+}
+
 
 .Contact-box
 {
@@ -13,15 +54,15 @@
   display:inline-block;
   position:absolute;
   left:15%;
-  top:80%;
+  top:50%;
   transform:translateY(-50%);
   color:white;
 }
 .Logo
 {
   display:inline-block;
-  height:20rem;
-  width:25rem;
+  height:10rem;
+  width:15rem;
 }
 
 
@@ -35,10 +76,10 @@
 {
   display:inline-block;
   position:absolute;
-  top:80%;
-  right:10%;
-  transform:translateY(-50%);
+  bottom:20%;
+  left:7%;
   color:white;
+  transform:translate(-7%,20%);
 }
 
 .icon
@@ -52,4 +93,73 @@
   display:inline-block;
 }
 
+.map-box{
+  /*width:200rem;*/
+  position:absolute;
+  bottom:10%;
+  right:6%;
+  transform:translateX(6%);
+  border:3px solid #86C232;
+  padding:1.5rem;
+  border-radius:3px;
 
+
+}
+
+
+
+.Contact_About-box{
+  height:60rem;
+  position:relative;
+}
+
+.Contact_Paragraph{
+  font-size:3rem;
+  color:#fff;
+  font-weight: 1000;
+}
+
+
+
+
+.Contact_left-part
+{
+  position:absolute;
+  left:0px;
+  top:0px;
+  display:inline-block;
+  width:100%;
+  height:100%;
+  background-color:#86C232;
+  clip-path: polygon(0 0, 45% 0, 30% 100%, 0 100%);
+
+}
+
+
+
+
+.Contact_right-part
+{
+  position:absolute;
+  left:0px;
+  top:0px;
+  display:inline-block;    
+  width:100%;
+  height:100%;
+  background-color:#222629;
+  clip-path:polygon(45% 0, 100% 0, 100% 100%, 30% 100%);
+
+
+}
+
+.image-box
+{
+  position:absolute;
+  right:4rem;
+  top:55%;
+  transform:translateY(-50%);
+  height:60%;
+  width:15%;
+  text-align:center;
+
+}

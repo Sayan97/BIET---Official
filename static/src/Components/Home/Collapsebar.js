@@ -1,76 +1,55 @@
 import React, { Component } from 'react';
 import{Navbar,NavDropdown,NavItem,Nav,MenuItem} from 'react-bootstrap';
 import "./Collapsebar.css";
-import mainLogo from "./BIETLogo.png";
+import mainLogo from "../BIETLogo1.png";
+import {NavLink} from 'react-router-dom';
+//import Header from "@material-kit-react/src/components/Header/Header.jsx";
+const Onscroll=(e)=>{
+   
+}
+
 
 class Collapsebar extends Component{
 
 
+
    
   render(){
-    const { style ,tst ,isSticky} = this.props;
-     if(isSticky){
+    const { style ,wasSticky ,isSticky} = this.props;
+   
         return (
         
-      <Navbar  collapseOnSelect inverse fixedTop className="Navbar" style={style} >
+      <Navbar  fixedTop className="navbar  navbar-inverse " id="navBar"style={style} >
       <Navbar.Header>
       <Navbar.Brand >
-      <a href="#home" >
+      <a href="#home" style={{position:"absolute",top:"0px",width:"150px"}}>
       <img src={mainLogo} alt="Logo" height="100%" className="logo-size" />
       </a>
     </Navbar.Brand>
       <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
-        <Nav className="Nav-content-two" >
+        <Nav className="Nav-content-two" id="navContent">
           <NavItem eventKey={1} href="#" >
-           Home
-          </NavItem>
+          <NavLink className="Nav-link" to='/'>Home </NavLink>
+           </NavItem>
           <NavItem eventKey={1} href="#">
-            About
+          <NavLink className="Nav-link" to='/About'> About </NavLink>
           </NavItem>
           <NavItem eventKey={2} href="#">
-            Ongoing Projets
+           <NavLink className="Nav-link" to='/OngoingProject'> Ongoing Projets </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            join New Projects
+            <NavLink className="Nav-link" to='/JoinNew'> Join New Projects </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            Blogs
+            <NavLink className="Nav-link" to='/Blogs'>  Blogs </NavLink>
           </NavItem>
         </Nav>
       </Navbar.Collapse>
     </Navbar>);
 
-    }else{
-      return(
-      <Navbar inverse collapseOnSelect className="Navbar" style={style} >
-      <Navbar.Header>
-      <Navbar.Toggle />
-      </Navbar.Header>
-      <Navbar.Collapse>
-        <Nav className="Nav-content" >
-          <NavItem eventKey={1} href="#" onClick={tst}>
-           Home
-          </NavItem>
-          <NavItem eventKey={1} href="#">
-            About
-          </NavItem>
-          <NavItem eventKey={2} href="#">
-            Ongoing Projets
-          </NavItem>
-            <NavItem eventKey={1} href="#">
-            join New Projects
-          </NavItem>
-            <NavItem eventKey={1} href="#">
-            Blogs
-          </NavItem>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
-
-    );}
-      
+    
     }
 }
 
