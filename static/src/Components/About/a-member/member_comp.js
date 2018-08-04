@@ -1,17 +1,16 @@
 import React from 'react';
 import './a-member.css';
-import temp_image from './img1.1.jpg';
 
-const Acomp=({name,designation,image})=>
+const Acomp=({name,designation,index})=>
 {
 
   return(
     <div class="a-member shadow-5">
-    <img src={temp_image} alt="Member-photograph" className="member-photo "/>
-    <div className="part-1">
+    <img src={require(`./Images/img${index}.jpg`)} alt="Member-photograph" className="member-photo" height="100%" width="100%" />
+    <div className="team_part-1">
     <span className="content-1">{name} </span>
     </div>
-    <div className="part-2">
+    <div className="team_part-2">
     <span className="content-2">{designation} </span>
    </div>
    </div>

@@ -5,14 +5,11 @@
   left:0px;
   right:0px;
   bottom:0px;
-  z-index:10;
+  z-index:6;
 }
 
 .paral1{ 
-    /* The image used */
 
-
- 
       box-sizing: border-box;
  /*background:linear-gradient(to bottom, rgb(34,38, 41,0.5),rgba(34,38,41,0.5)),url("img2.8.jpeg");    /* Set a specific height */
     height: 100vh;
@@ -27,6 +24,7 @@
 
     display:flex;
     justify-content: center;
+    
     align-items:center;
 
     padding:6rem;
@@ -52,18 +50,91 @@
     border-radius:1rem;
 }
 
-.Primary-head
-{
-    font-size:6rem;
-    color:white;
-    font-weight: 1000;
 
-text-align:center;
-   
 
+/* The typing effect */
+/*
+@keyframes typing {
+  from { width: 0% }
+  to { width: 50% }
+}
+*/
+/* The typewriter cursor effect */
+/*
+@keyframes blink-caret {
+  from, to { border-color: white }
+  100% { border-color: black; }
 }
 
-.About-box{
+
+*/
+
+@font-face {
+    font-family:myFirstFont;
+    src: url('../Fonts/Cosmology.ttf');
+}
+
+@font-face {
+    font-family:myfirstFont-1;
+    src: url('../Fonts/google_roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family:myfirstFont-2;
+    src: url('../Fonts/Elianto/Elianto-Regular.ttf');
+}
+
+@font-face{
+    font-family:navbar;
+    src: url('../Fonts/google_roboto/Roboto-Thin.ttf')
+  }
+
+@font-face{
+    font-family: sechead;
+    src: url('../Fonts/google_roboto/Roboto-Italic.ttf')
+}
+
+@font-face{
+    font-family: para;
+    src: url('../Fonts/google_roboto/Roboto-Regular.ttf')
+}
+
+@font-face{
+    font-family: label;
+    src: url('../Fonts/google_roboto/Roboto-Medium.ttf')
+}
+@font-face{
+    font-family: img1;
+    src: url('../Fonts/google_roboto/Roboto-Light.ttf')
+}
+@font-face{
+    font-family: img2;
+    src: url('../Fonts/google_roboto/Roboto-LightItalic.ttf')
+}
+
+.Primary-head
+{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1rem; /* Adjust as needed */
+    font-size:5rem;
+    display:inline-block;
+    color:white;
+    font-weight:800;
+    font-family:myfirstFont-1;
+    text-align:center;
+    /*
+     animation: 
+    typing 3.5s steps(10, end),
+    blink-caret .75s step-end infinite;*/
+}
+   
+   
+
+
+.Home_About-box{
     height:50rem;
     position:relative;
 }
@@ -90,28 +161,40 @@ text-align:center;
 
 .Secondary-head
 {
-    margin-left:10rem;
-    margin-top:4rem;
+   
     display:inline-block;
     color:whitesmoke;
-    border-left:1.3rem solid #86C232;
-    padding-left:1.5rem;
     font-size:4.5rem;
-    letter-spacing:3px;
+    letter-spacing:0.2rem;
+    padding-left:1.2rem;
+    font-family: sechead;
+    font-family:myfirstfont-2;
+
 }
+
+
+.about_secondary_head
+{
+    position: absolute;;
+    left:7.3rem;
+    top:2rem;
+    border-left:1.3rem solid #86C232;
+
+}
+
 
 
 .paragraph
 {
     position: absolute;
-    width:55%;
-    left:28%;
-    top:30%;
-    transform:translateX(-30%);
+    width:60%;
+    left:7.3rem;
+    top:40%;
     color:white;
     font-size:2rem;
     letter-spacing:3px;
-
+    font-family: para;
+    
 }
 
 
@@ -153,40 +236,48 @@ text-align:center;
     color:whitesmoke;
     padding:5px;
     border-radius:5px;
+    margin-top: 3rem;
     margin-bottom:10px;
- 
-
-
+    font-family:myFirstFont-2;
+    letter-spacing: 0.5rem;
 }
 
-.paral2{ 
-    /* The image used */
 
 
-    background:linear-gradient(to right,rgba(34,38,41,0.5),rgba(34,38,41,0.5)),
-    url("./img4.3.jpg");
-
-
-    /* Set a specific height */
-    /*height:100vh;*/
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom:2rem;
+.jarallax {
+    position: relative;
+    z-index: 200;
 }
+/*.jarallax > .para12 {
+    position: absolute;
+      
+    object-fit: cover;
+     support for plugin https://github.com/bfred-it/object-fit-images 
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}*/
 
 
 .paral3{ 
     /* The image used */
 
-    margin:0px;
- 
-  display:block;
-  padding:0rem;
+        /* Create the parallax scrolling effect */
+    
+   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:3rem 0;
+
+   
   
+}
+.hide{
+    transform: translateY(-100%);
 }
 
 
@@ -197,74 +288,12 @@ text-align:center;
     display:block;
     background-color:black;
     color:white;  
-    padding:10px;
     margin:0px;
     height:250px;
 }
 
-.Certify-box
-{
-    display:block;
-    position: relative;
-    background-color:#222629;
-    height:20rem;
-    color:white;
-    margin-top:-1rem;
-    top:10px;
-    padding:2rem;
-    background-color:#474b4f;
-    /*background:linear-gradient(to right, rgba(134,194,50,0.3)
-    ,rgba(97,137,47,0.3)) , url(./img1.jpg);*/
-    background-position:center;
-    background-size:cover;
-
- 
-}
-
-.Foot_Logo
-{
-    width:25rem;
-}
-
-.logo-container
-{
-
-    display:inline-block;
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
-
+.hideNav{
+    transform: translateY(-100%);
 }
 
 
-.Foot_status-1
-{
-    display:inline-block;
-    position:absolute;
-    left:10%;
-    top:50%;
-    font-size:1.7rem;
-    color:lightgrey;
-    background-color:rgba(34,38,41,0.3);
-    border-radius:1rem;
-    padding:0.5rem;
-    text-align:center;
-
-
-}
-
-.Foot_status-2
-{
-    display:inline-block;
-    position:absolute;
-    right:10%;
-    top:50%;
-    font-size:1.7rem;
-    color:lightgrey;
-    background-color:rgba(34,38,41,0.3);
-    border-radius:1rem;
-    padding:0.5rem;
-    text-align:center;
-
-}

@@ -17,36 +17,40 @@ margin:1rem;
   width:50rem;
   border-radius:1.2rem;
   overflow: hidden;
-  box-shadow:0.5rem 0.5rem #61892f;
+  display:inline-block;
+  margin:5rem;
  
 }
 
-.proj_name
+.home_proj_name
 {
-  height:10%;
+  height:15%;
   width:100%;
   position:absolute;
   bottom:0rem;
   display:block;
   text-align:center;
-
-
+  text-transform: uppercase;
+  background-color:black;
+  
 }
 
-
-.proj_name p
+.home_proj_name p
 {
-  color:#61892f;
-  height:100%;
-  background-color:black;
-
-
+  font-family: label;
+  color: whitesmoke;
+  font-size: 2rem;
+  letter-spacing:0.2rem;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
 }
 
 
 .Side-1
 {
-  height:90%;
+  height:85%;
   display:inline-block;
   width:100%;
   text-align:center;
@@ -62,14 +66,13 @@ margin:1rem;
 {
   height:100%;
   width:100%;
-  background-color:rgba(134,194,50,1);
-
+  background-color:rgba(34,38,41,0.8);
   position:absolute;
   cursor:pointer;
   left:0rem;
   top:0rem;
   text-align:center;
-  transition:all 1.5s;
+  transition:all 0.2s;
   opacity:0;
   transform:translateY(-100%);
 }
@@ -84,7 +87,7 @@ margin:1rem;
 .proj_title
 {
   font-size:2rem;
-  color:#222629;
+  color:whitesmoke;
   text-align:center;
   display: inline-block;
   width:60%;
@@ -92,6 +95,7 @@ margin:1rem;
   left:50%;
   top:20%;
   transform:translateX(-50%);
+  font-family: para;
 }
 
 .Proj_Details_button
@@ -103,9 +107,9 @@ margin:1rem;
   padding:1rem;
   font-size:1.5rem;
   background-color:black;
-  color:#61892f;
+  color: whitesmoke;
   border-radius:1.5rem;
-
+  font-family: label;
 
 
 
@@ -126,6 +130,14 @@ margin:1rem;
   font-size:5rem;
   margin-bottom:2rem; 
 
+}
+
+.ongoing_secondary_head
+{
+  position:absolute;
+  left:7.3rem;
+  top:3rem;
+  border-left:1.3rem solid #86c232;
 }
 
 

@@ -1,21 +1,15 @@
 import React ,{Component} from 'react';
 import {Carousel,FormControl,FormGroup,Button} from 'react-bootstrap';
+import Timelinedisp from './Timeline_disp';
 
 import img1 from './img1.jpeg';
 import img2 from './img2.jpg';
 import img3 from './img3.jpg';
 
-
-import { StickyContainer, Sticky } from 'react-sticky';
-import Collapsebar from '../Home/Collapsebar';
-import Logobar from '../Home/Logobar';
+import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar 
+import Pagefooter from '../PageFooter/PageFooter.js';//footer on each page
 
 import './Blogs.css';
-
-
-
-
-
 
 const Blogs = ()=>
 {
@@ -23,18 +17,21 @@ const Blogs = ()=>
   return(
 
     <div>
-    <div>
-        <Logobar/>
-        <StickyContainer >
-        <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
+      <div>
+     
+        <NavigationTwo/>
         
-    <div className="paral1">
-        <div className="Blog_Section-1">
 
-    </div>
+          <div className="Blog_paral1">
+            
+        
+        <div className="Blog_Section-1">
+        <h1 className="primary-head">Our Timeline</h1> 
+
+        <Timelinedisp/>
         </div>
+        
     
-        <div className="paral2">
         <div className="Blog_Section-2">
     <h1 className="primary-head">New Innovations </h1> 
 
@@ -67,57 +64,22 @@ const Blogs = ()=>
 </Carousel>
 
 
-        </div>
-
-        <div className="paral3">
-    <div className="Blog_Section-3">
-
-    <h1 className="primary-head">SHARE YOUR IDEA</h1>
-
-    <div className="Blog_form-box">
-    <h2>Enter your details </h2>
-    <form>
-    <FormGroup>
-
-    <FormControl
-    id="blog_formControlsText"
-    type="text"
-    label="Name"
-    placeholder="Enter Name Here"
-    />
-
-  <FormControl
-    id="blog_formControlsEmail"
-    type="email"
-    label="Email address"
-    placeholder="Enter email"
-  />
-
-  <FormControl
-  id="blog_formControlsProposal"
-  type="text"
-  label="Proposol"
-  placeholder="Enter Proposol Here"
-  />
-
-  <FormControl 
-  id="blog_formControlsAbstract"
-   componentClass="textarea" 
-   placeholder="Abstract" 
-    />
-  </FormGroup>
-  <Button type="submit">Submit</Button>
-
-</form>
-</div>
-</div>
-</div>
-</div>
-
-  </StickyContainer>
-  </div>
+      </div>
     </div>
-  )
+  );
+
+    <div className="Blog_Section-3">
+    <h1 className="primary-head">SHARE YOUR IDEA</h1>
+    <div className="Blog_form-box">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdV1dm6WAqBj7xpPhs-j21SJWNc36VX3A4zjl0O_PkbOMrTzQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+</div>
+<Pagefooter/>
+</div>
+</div>
+)
+
+
 }
 
 
