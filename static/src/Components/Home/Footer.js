@@ -26,6 +26,10 @@ const Footer=()=>
       biet.ilabs@gmail.com
     </div>
 
+    {
+      /*
+
+    
 
     <div className="Social-media-box wow fadeInLeft">
 
@@ -36,6 +40,9 @@ const Footer=()=>
     <SocialIcon className="icon grow" url="https://www.linkedin.com/" />
 
   </div>
+
+  */
+    }
 
 
   </div>

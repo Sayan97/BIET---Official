@@ -13,24 +13,19 @@ margin:1rem;
 {
   box-sizing:border-box;
   position:relative;
-  height:30rem;
-  width:50rem;
+  height:25vw;
+  width:35vw;
   border-radius:1.2rem;
   overflow: hidden;
   display:inline-block;
-  margin:5rem;
+  margin:3rem;
 
 }
-@media only screen and (max-width: 37.25em){
-  .proj_image{
-    width:40rem;
-      margin:3rem;
-  }
-}
+
 @media only screen and (max-width: 250px){
   .proj_image{
     width:20rem;
-      margin:2rem;
+      margin:0rem;
   }
 }
 .home_proj_name
@@ -50,7 +45,7 @@ margin:1rem;
 {
   font-family: label;
   color: whitesmoke;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing:0.2rem;
   position:absolute;
   left:50%;

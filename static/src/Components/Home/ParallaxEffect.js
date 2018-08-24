@@ -41,9 +41,9 @@ class Home extends Component
   
   constructor(props) {
     super(props)
-    this.handleScroll = this.handleScroll.bind(this);
+    //this.handleScroll = this.handleScroll.bind(this);
   }
-
+/*
   
   componentDidMount() 
   {
@@ -59,6 +59,8 @@ class Home extends Component
 
 
   //funtion to handle the navbar on scrolling
+
+  
   handleScroll(e) {
    const nav1=document.querySelector("#nav1");
    const nav2=document.querySelector('#nav2');
@@ -76,6 +78,8 @@ class Home extends Component
       nav1.style.transform="translateY(0%)";
     }
   }
+*/
+
 
 
   render()
@@ -87,8 +91,10 @@ class Home extends Component
       <div>
         <div>
           <Particles params={para} className="Particle"/>
+          {/*
           <Navigation />
           <NavigationTwo className="hide"/>
+          */}
           <div className="paral1" >
             <div className="head-box">
               <h1 className="Primary-head wow fadeIn"> WELCOME TO <br/> </h1>
